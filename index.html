@@ -1,0 +1,454 @@
+<!-- Design notes: add name & author in footer 
+      eggplants???
+      animate bg? interactive?
+      More space between elements
+      center submit on mobile
+      bigger type on mobile
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
+
+    <title>Security Questions for Single, Childless People</title>
+    <!--<meta name="description" content="Description">-->
+    <!--<meta name="author" content="Author">-->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon/icon-100.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon/icon-100.png">
+
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="libraries/fontawesome-pro-5.0.6/on-server/css/fontawesome-all.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img alt="Eggplant & Peach Icon" src="images/icon/icon-600.png" class="icon rotateIn animated" onClick="window.location.reload()">
+            <h1 onClick="window.location.reload()">Eggplant &amp; Peach <small><span id="tagline"></span></small></h1>
+        </nav>
+    </header>
+    <main>
+        <section id="intro" class="active">
+            <div class="intro-box">
+                <div class="account-box bounceInLeft animated">
+                    <span id="profpic"></span>
+                    <span class="account-info">
+            <h4><span id="user-name"></span>, <span id="age"></span></h4>
+                    <p id="job"></p>
+                    </span>
+                </div>
+                <div class="intro-text fadeIn animated">
+                    <h2>Welcome, <span id="name"></span>!
+                    </h2>
+                    <p>You have 69 (ha!) unread messages waiting. It's been a while since you checked your inbox, and we know it isn't because you've found someone, because you ghost on 96.2% of suitors.
+                        <br><br>So here's the deal: we know it's you, but you abandoned us for 3 months and we're petty, so we're going to require you answer a security question before you can skim and ignore all those "hey"s and "wyd"s that we know you only check for the confidence boost.</p>
+                    <button id="next-1" class="next" type="button">Answer a Security Question <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section id="intro-bg" class="active">
+        </section>
+        <section id="question-1">
+            <div class="question-box">
+                <div class="question fades-out">
+                    <p>Out of all of your friends’ children, what is first name of the one you find most annoying?
+                    </p>
+                </div>
+                <br>
+                <div class="answer fades-out">
+                    <label for="annoying-child">Annoying Child's Name</label>
+                    <input type="text" id="annoying-child">
+                    <button id="submit-1" class="next" type="button">Submit <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="try-again">
+                    <p>Sorry, that answer doesn't seem to be right. Would you like to try another question?</p>
+                    <button class="tinderredirect" type="button" onclick="window.location.href='https://tinder.com/'">Give Up</button>
+                    <button id="next-2" class="next" type="button">Try Another Question  <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section id="question-1-bg" class="">
+        </section>
+        <section id="question-2">
+            <div class="question-box">
+                <div class="attempts fades-out">
+                    <p>You have 13 more attempts.</p>
+                </div>
+                <div class="question fades-out">
+                    <p>What is the make and model of the car you were driving when you realized you don’t actually like to share with anyone?</p>
+                </div>
+                <div class="answer fades-out">
+                    <label for="make-and-model">Make and Model</label>
+                    <input type="text" id="make-and-model">
+                    <button id="submit-2" class="next" type="button">Submit <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="try-again">
+                    <p>Sorry, that answer doesn't seem to be right. Would you like to try another question?</p>
+                    <button class="tinderredirect" type="button" onclick="window.location.href='https://tinder.com/'">Give Up</button>
+                    <button id="next-3" class="next" type="button">Try Another Question  <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section id="question-2-bg" class="">
+        </section>
+        <section id="question-3">
+            <div class="question-box">
+                <div class="attempts fades-out">
+                    <p>You have 12 more attempts.</p>
+                </div>
+                <div class="question fades-out">
+                    <p>What is the name of the sports team whose statistics you think about whenever talk turns to finding a good preschool?</p>
+                </div>
+                <div class="answer fades-out">
+                    <label for="sports-team">Sports Team</label>
+                    <input type="text" id="sports-team">
+                    <button id="submit-3" class="next" type="button">Submit <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="try-again">
+                    <p>Sorry, that answer doesn't seem to be right. Would you like to try another question?</p>
+                    <button class="tinderredirect" type="button" onclick="window.location.href='https://tinder.com/'">Give Up</button>
+                    <button id="next-4" class="next" type="button">Try Another Question  <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section id="question-3-bg" class="">
+        </section>
+        <section id="question-4">
+            <div class="question-box">
+                <div class="attempts fades-out">
+                    <p>You have 11 more attempts.</p>
+                </div>
+                <div class="question fades-out">
+                    <p>What is the middle name of the ex-boy/girlfriend whose profile photo you look at from time to time so as to comfort yourself that you made the right choice in ending that relationship?</p>
+                </div>
+                <div class="answer fades-out">
+                    <label for="name-of-ex">Name of Ex</label>
+                    <input type="text" id="name-of-ex">
+                    <button id="submit-4" class="next" type="button">Submit <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="try-again">
+                    <p>Sorry, that answer doesn't seem to be right. Would you like to try another question?</p>
+                    <button class="tinderredirect" type="button" onclick="window.location.href='https://tinder.com/'">Give Up</button>
+                    <button id="next-5" class="next" type="button">Try Another Question  <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section id="question-4-bg" class="">
+        </section>
+        <section id="question-5">
+            <div class="question-box">
+                <div class="attempts fades-out">
+                    <p>You have 10 more attempts.</p>
+                </div>
+                <div class="question fades-out">
+                    <p>When you make a Top 10 list of the places you got to travel to because you didn’t get married and have kids, what ranking is Paris?</p>
+                </div>
+                <div class="answer fades-out">
+                    <label for="paris-ranking">Rank of Paris</label>
+                    <input type="number" min="1" max="10" id="paris-ranking" class="quantity">
+                    <i class="fal fa-angle-up qty-plus"></i>
+                    <i class="fal fa-angle-down qty-minus"></i>
+                    <button id="submit-5" class="next" type="button">Submit <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="try-again">
+                    <p>Sorry, that answer doesn't seem to be right. Would you like to try another question?</p>
+                    <button class="tinderredirect" type="button" onclick="window.location.href='https://tinder.com/'">Give Up</button>
+                    <button id="next-6" class="next" type="button">Try Another Question  <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section id="question-5-bg" class="">
+        </section>
+        <section id="question-6">
+            <div class="question-box">
+                <div class="attempts fades-out">
+                    <p>You have 9 more attempts.</p>
+                </div>
+                <div class="question fades-out">
+                    <p>What is the age your mother cites when saying, “I thought that by the time you turned ___ you’d be married”?</p>
+                </div>
+                <div class="answer fades-out">
+                    <label for="age-cited">Age Cited</label>
+                    <input type="number" min="1" max="45" id="age-cited" class="quantity">
+                    <i class="fal fa-angle-up qty-plus"></i>
+                    <i class="fal fa-angle-down qty-minus"></i>
+                    <button id="submit-6" class="next" type="button">Submit <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="try-again">
+                    <p>Sorry, that answer doesn't seem to be right. Would you like to try another question?</p>
+                    <button class="tinderredirect" type="button" onclick="window.location.href='https://tinder.com/'">Give Up</button>
+                    <button id="next-7" class="next" type="button">Try Another Question  <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section id="question-6-bg" class="">
+        </section>
+        <section id="question-7">
+            <div class="question-box">
+                <div class="attempts fades-out">
+                    <p>You have 8 more attempts.</p>
+                </div>
+                <div class="question fades-out">
+                    <p>What was the name of the street of the Starbucks where you met the blind date who made you resolve, “Nope, that’s it, no more blind dates”?</p>
+                </div>
+                <div class="answer fades-out">
+                    <label for="name-of-street">Name of Street</label>
+                    <input type="text" id="name-of-street">
+                    <button id="submit-7" class="next" type="button">Submit <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="try-again">
+                    <p>Sorry, that answer doesn't seem to be right. Would you like to try another question?</p>
+                    <button class="tinderredirect" type="button" onclick="window.location.href='https://tinder.com/'">Give Up</button>
+                    <button id="next-8" class="next" type="button">Try Another Question  <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section id="question-7-bg" class="">
+        </section>
+        <section id="question-8">
+            <div class="question-box">
+                <div class="attempts fades-out">
+                    <p>You have 7 more attempts.</p>
+                </div>
+                <div class="question fades-out">
+                    <p>What is the name of the town you got the hell out of when you graduated from high school?</p>
+                </div>
+                <div class="answer fades-out">
+                    <label for="name-of-town">Name of Street</label>
+                    <input type="text" id="name-of-town">
+                    <button id="submit-8" class="next" type="button">Submit <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="try-again">
+                    <p>Sorry, that answer doesn't seem to be right. Would you like to try another question?</p>
+                    <button class="tinderredirect" type="button" onclick="window.location.href='https://tinder.com/'">Give Up</button>
+                    <button id="next-9" class="next" type="button">Try Another Question  <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section id="question-8-bg" class="">
+        </section>
+        <section id="question-9">
+            <div class="question-box">
+                <div class="attempts fades-out">
+                    <p>You have 6 more attempts.</p>
+                </div>
+                <div class="question fades-out">
+                    <p>What is the color of the fur of the cat who will be the first one to start chewing on your leg after you die alone at home and leave all of your pets without any food or water for days?</p>
+                </div>
+                <div class="answer fades-out">
+                    <label for="color-of-cat">Color of Fur</label>
+                    <input type="se" id="color-of-cat">
+                    <button id="submit-9" class="next" type="button">Submit <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="try-again">
+                    <p>Sorry, that answer doesn't seem to be right. Would you like to try another question?</p>
+                    <button class="tinderredirect" type="button" onclick="window.location.href='https://tinder.com/'">Give Up</button>
+                    <button id="next-10" class="next" type="button">Try Another Question  <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section id="question-9-bg" class="">
+        </section>
+        <section id="question-10">
+            <div class="question-box">
+                <div class="attempts fades-out">
+                    <p>You have 5 more attempts.</p>
+                </div>
+                <div class="question fades-out">
+                    <p>What is the ratio of the amount of times you have casual sex in the last year compared to the amount of times your married best friend assumes you’ve had casual sex?</p>
+                </div>
+                <div class="answer fades-out">
+                    <label for="ratio-1">Sex Had</label>
+                    <input type="number" id="ratio-1">
+                    <i class="fal fa-angle-up qty-plus"></i>
+                    <i class="fal fa-angle-down qty-minus"></i>
+                    <p style="display: inline;"> : </p>
+                    <label for="ratio-2">Sex Assumed</label>
+                    <input type="number" id="ratio-2">
+                    <i class="fal fa-angle-up qty-plus" style="left: calc(40% + 6px)"></i>
+                    <i class="fal fa-angle-down qty-minus" style="left: calc(40% + 6px)"></i>
+                    <button id="submit-10" class="next" type="button">Submit <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="try-again">
+                    <p>Sorry, that answer doesn't seem to be right. Would you like to try another question?</p>
+                    <button class="tinderredirect" type="button" onclick="window.location.href='https://tinder.com/'">Give Up</button>
+                    <button id="next-11" class="next" type="button">Try Another Question  <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section id="question-10-bg" class="">
+        </section>
+        <section id="question-11">
+            <div class="question-box">
+                <div class="attempts fades-out">
+                    <p>You have 4 more attempts.</p>
+                </div>
+                <div class="question fades-out">
+                    <p>In one word, sum up your most depressing New Year’s Eve. (Examples: “Measles.” “Robocop.”)</p>
+                </div>
+                <div class="answer fades-out">
+                    <label for="new-year-summary">One Word</label>
+                    <input type="text" id="new-year-summary">
+                    <button id="submit-11" class="next" type="button">Submit <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="try-again">
+                    <p>Sorry, that answer doesn't seem to be right. Would you like to try another question?</p>
+                    <button class="tinderredirect" type="button" onclick="window.location.href='https://tinder.com/'">Give Up</button>
+                    <button id="next-12" class="next" type="button">Try Another Question  <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section id="question-11-bg" class="">
+        </section>
+        <section id="question-12">
+            <div class="question-box">
+                <div class="attempts fades-out">
+                    <p>You have 3 more attempts.</p>
+                </div>
+                <div class="question fades-out">
+                    <p>When taking a road trip on your own, what is the first name of the celebrity who you pretend is in the passenger seat with you?</p>
+                </div>
+                <div class="answer fades-out">
+                    <label for="road-trip-companion">Road Trip Companion</label>
+                    <input type="text" id="road-trip-companion">
+                    <button id="submit-12" class="next" type="button">Submit <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="try-again">
+                    <p>Sorry, that answer doesn't seem to be right. Would you like to try another question?</p>
+                    <button class="tinderredirect" type="button" onclick="window.location.href='https://tinder.com/'">Give Up</button>
+                    <button id="next-13" class="next" type="button">Try Another Question  <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section id="question-12-bg" class="">
+        </section>
+        <section id="question-13">
+            <div class="question-box">
+                <div class="attempts fades-out">
+                    <p>You have 2 more attempts.</p>
+                </div>
+                <div class="question fades-out">
+                    <p>Should you decide that you do want a child, what is the name of your friend or friend’s partner whom you would choose to father/carry that child, in a Big Chill-like scenario?</p>
+                </div>
+                <div class="answer fades-out">
+                    <label for="big-chill-scenario">Big Chill Partner
+          </label>
+                    <input type="text" id="big-chill-scenario">
+                    <button id="submit-13" class="next" type="button">Submit <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="try-again">
+                    <p>Sorry, that answer doesn't seem to be right. Would you like to try another question?</p>
+                    <button class="tinderredirect" type="button" onclick="window.location.href='https://tinder.com/'">Give Up</button>
+                    <button id="next-14" class="next" type="button">Try Another Question  <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section id="question-13-bg" class="">
+        </section>
+        <section id="question-14">
+            <div class="question-box">
+                <div class="attempts fades-out">
+                    <p>You have 1 more attempt.</p>
+                </div>
+                <div class="question fades-out">
+                    <p>What is the title of the song that was playing when you realized that your family’s genetic line was going to end with you and your siblings?</p>
+                </div>
+                <div class="answer fades-out">
+                    <label for="title-of-song">Title of Song</label>
+                    <input type="text" id="title-of-song">
+                    <button id="submit-14" class="next" type="button">Submit <i class="fal fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="try-again">
+                    <p>Sorry, you've run out of attempts. Perhaps try:</p>
+                    <button class="tinderredirect" type="button" onclick="window.location.href='https://tinder.com/'">Tinder</button>
+                    <button class="tinderredirect" type="button" onclick="window.location.href='https://https://bumble.com/'">Bumble</button>
+                    <button class="tinderredirect" type="button" onclick="window.location.href='https://https://www.okcupid.com/'">OkCupid</button>
+                    <button class="tinderredirect" type="button" onclick="window.location.href='https://https://www.pornhub.com/'">PornHub</button>
+                    <br><br>
+                    <p><small>Or you could order seamless and stare blankly into your phone's lock screen trying to decide if you should open your twitter or slack notifications first.</small></p>
+                </div>
+            </div>
+        </section>
+        <section id="question-14-bg" class="">
+        </section>
+        <svg id="blobs" class="blob" xmlns="http://www.w3.org/2000/svg">
+      <path id="blob-intro" d="M890.2,1198.1c-194.9,0-187-126.6-199-241c-13.2-125.7-68-243-179-284s-227-12-370,11s-177-42-107-196s332.3-584.6,572-465s-12.8,348.4,141.1,431.2c153.8,82.8,454.4,7.8,553.9,223.8c103.7,225-23,330-58,371C1140.3,1147.9,1020.6,1191.7,890.2,1198.1z"/>
+      <path id="blob-1" opacity="0" d="M802.2,1180.2c-176.5,0-236.7-189.3-248.7-303.6C540.3,750.9,452.3,449,348.2,377.2
+			c-89.2-61.5-339.7,116-348-8c-1.9-27.7,7-57.3,19-96c68.8-221.1,532.9-399.1,676-152c47.1,79.8,35.2,274.5,94.5,347.5
+			c54,66.4,215.6,20.1,258.5,95.5c47.2,83-169.3,224.5-166,293S978.7,1180.2,802.2,1180.2z"/>
+      <path id="blob-2" opacity="0" d="M663.6,1034.7c-97.2-170.8,17.4-308-245-292c-196,10-332.1-105.6-375-181c-47.2-83-51.1-189.9-16.5-317.2
+			s406.3-314,551.5-189.8s-176,271-147,327s405-111,558-52s233,212,253,331s-11.5,332.5-92,391S760.8,1205.5,663.6,1034.7z"/>
+      <path id="blob-3" opacity="0" d="M802.2,1180.2c-194.9,0-236.7-189.3-248.7-303.6C540.3,750.9,452.3,588,348.2,516.2
+			c-89.2-61.5-339.7-23-348-147c-1.9-27.7,2.3-69.8,28-111.1c172-275.3,553.4-332.9,667-136.9c113.7,196,113.7,196,173,269 c54,66.4,137.1,98.6,180,174c47.2,83,75.8,177.8,73,293S992.6,1172.4,802.2,1180.2z"/>
+      <path id="blob-4" opacity="0" d="M979,1125c-72,55-328,204-363,62s274-463-105-444c-196,10-387-26-458-120S-3.5,379.5,16,286C56.2,92.1,370-101,470,60c76.9,126.6,22.3,278.7,75,331s206,82,359,141s250,126,270,245C1161,909.5,1072.5,1018.1,979,1125z"/>
+      <path id="blob-5" opacity="0" d="M723.1,500.5c-151.9,2.5-99,118-91,298s-76,250-298,250s-306-254-330-428s62.1-319.2,116.1-367.1
+			s132.9-119.9,261.9-129.9S571.5,209.2,680,180s457.4-212.6,533.1-160.6c129.1,88.7,118,196.3,20.3,360.6
+			C1127.3,516.4,936.1,524.8,723.1,500.5z"/>
+      <path id="blob-6" opacity="0" d="M1194.6,546.4c-43.8-16.6-289.6-62 240.7,110.6S716,788.8,408.2,742.2S106.6,562.2,36.9,392s-28-240,22-305
+			S135.6-13,312.3,4.5c284.8,65,545.7,215.2,714.3,266.8c168.5,51.6,218.5-302.6,416.1-191.3s166.1,274.4,103.7,346.6
+			S1296.3,594.4,1194.6,546.4z"/>
+      <path id="blob-7" opacity="0" d="M527.9,841.3c-67.2,67.8,75,185-169,293s-294-112-315-190s-66-206-31-311s105-179,234-208s338.2,134.2,452,23
+			s-61.8-361.5,158-443c164-54,438.3,317.2,409,506s-89.6,312.3-178,314S668.2,725.9,527.9,841.3z"/>
+      <path id="blob-8" opacity="0" d="M723.4,749.1c-166,30-49,320-293,428s-359-97-380-175s-44-215-50-337s63-257,229-332s373.6,58.3,472,5
+			S754,41,1010.4,0.1c194-3,307,80,338,351s-127.5,503.3-223,489S854,720.2,723.4,749.1z"/>
+      <path id="blob-9" opacity="0" d="M558.9,832.5c-67.2,67.8,44,191-200,299s-294-112-315-190s-66-206-31-311s84-146,181-205s226.8-25.7,336-77
+			c109.2-51.3,174.2-380.1,327-346s220.6,209.3,191.3,398.2S944.8,713.2,825.9,734.5S650.9,756.9,558.9,832.5z"/>
+      <path id="blob-10" opacity="0" d="M825.9,734.5c-140,59-453-61.6-514,0c-67.2,67.8,291,289,47,397s-294-112-315-190s-66-206-31-311
+			s84-146,181-205S559.5,532.7,581,348.2C602.5,163.8,746-8.4,856.9,2.5s220.6,209.3,191.3,398.2
+			C1032.2,578.6,952.9,683.9,825.9,734.5z"/>
+      <path id="blob-11" opacity="0" d="M1236.2,932.5c-176.5-141-149-90-247-243s-53-262.4-58.7-362.2s-58.4-244-199.7-293.1
+			c-144-49.1-306.1-43.3-482,4.4C87.1,86.3-101.8,354.5,64.6,424.6s484-132.2,411.6,131.9c-51.8,197.8-98,147-137,367
+			s387.3,416.6,626,369S1428,1092.3,1236.2,932.5z"/>
+      <path id="blob-12" opacity="0" d="M564.5,1177.2c-74.7-132.1,444-389-246-332c-196,10-265-118-293-174s-33.4-233.5-14-327c40.3-193.8,307-455,407-294s41,274,93,343s188,70,341,129s250,126,270,245s-70.1,252-115,316
+			C962.6,1147.1,639.2,1309.3,564.5,1177.2z"/>
+      <path id="blob-13" opacity="0" d="M1114.9,514.1c28.1-120.1,13.9-252.1-10.5-327.3S620.1-108.7,639.9,76.1s40.5,318.8-208,292
+			c-196-10-305,47-379,132s-63,223-12,392s350,368,469,289s-15-237,19-349s140-90,264-93C934.1,728.1,1086.8,634.2,1114.9,514.1z"/>
+      <path id="blob-14" opacity="0" d="M1236.2,932.5c-176.5-141-149-90-247-243s-53-262.4-58.7-362.2s-58.4-244-199.7-293.1c-144-49.1-306.1-43.3-482,4.4C87.1,86.3-101.8,354.5,64.6,424.6s484-132.2,411.6,131.9c-51.8,197.8-98,147-137,367
+			s387.3,416.6,626,369S1428,1092.3,1236.2,932.5z"/>
+    </svg>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>"Security Questions For Single, Childless People" by Shannon Reed<br>Published to <a href="https://www.mcsweeneys.net/articles/security-questions-for-single-childless-people">McSweeny's</a> October 3rd, 2014</p>
+        </div>
+    </footer>
+</body>
+<!--<script type="text/javascript" src="scripts/scrollto.js"></script>-->
+<script type="text/javascript" src="scripts/scrollnext.js"></script>
+<script type="text/javascript" src="scripts/invalid.js"></script>
+<script type="text/javascript" src="scripts/randomname.js"></script>
+<script type="text/javascript" src="scripts/randomtag.js"></script>
+
+<script type="text/javascript" src="scripts/plusminus.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+<script type="text/javascript" src="scripts/svgmorph.js"></script>
+
+<script>
+    // Input Focus 
+    $('input').on('focus', function() {
+        $('label').addClass('filled focused');
+    });
+
+    $('input').on('blur', function() {
+        $('label').removeClass('focused');
+        if (this.value === '') {
+            $('label').removeClass('filled')
+        }
+    });
+</script>
+
+</html>
