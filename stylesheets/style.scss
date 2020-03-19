@@ -1,21 +1,16 @@
 @import 'reset';
+@import 'breakpoints';
 @import 'mixins';
 @import 'animate';
 @import 'colors';
 @import 'typography';
+@import 'backgrounds';
 
 body {
-  /*  overflow: hidden;*/
-  color: $black;
-  font-family: $font-primary;
   overflow: hidden;
-  -webkit-font-smoothing: antialiased;
 }
 
 main {
-  color: $white;
-  font-family: $font-primary;
-  font-weight: 400;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -24,7 +19,6 @@ main {
 header {
   background-color: $white;
   min-height: 60px;
-  font-weight: 600;
   position: fixed;
   padding: 0 30px;
   left: 0;
@@ -43,6 +37,13 @@ header {
       display: inline-block;
       cursor: pointer;
     }
+
+    .logotype {
+      height: 2em;
+      width: auto;
+      vertical-align: middle;
+      padding: 0 .5em;
+    }
   }
 
   h1 {
@@ -52,10 +53,6 @@ header {
     line-height: 1em;
     vertical-align: middle;
     cursor: pointer;
-  }
-
-  small {
-    font-size: .7rem;
   }
 }
 
@@ -83,7 +80,7 @@ section {
 
   &[id^="question-"],
   &#intro[id^="intro"] {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     position: relative;
     vertical-align: top;
@@ -120,108 +117,6 @@ section {
   }
 }
 
-.blob {
-  position: absolute;
-  z-index: 20;
-  pointer-events: none;
-  fill: #ffffff;
-  opacity: .2;
-  transform: scale(2);
-  width: 100vw;
-  height: 100vh;
-  transition: all .25s ease-in-out;
-}
-
-
-#intro-bg {
-  z-index: 1;
-  @include linearGradient($color-4, $color-5);
-}
-
-#question-1-bg {
-  /* children's names */
-  z-index: 2;
-  @include linearGradient($color-5, $color-6);
-}
-
-#question-2-bg {
-  /* car make and model */
-  z-index: 3;
-  @include linearGradient($color-7, $color-8);
-}
-
-#question-3-bg {
-  /* sports team */
-  z-index: 4;
-  @include linearGradient($color-8, $color-1);
-}
-
-#question-4-bg {
-  /* middle name */
-  z-index: 5;
-  @include linearGradient($color-1, $color-2);
-}
-
-#question-5-bg {
-  /* top 10 list */
-  z-index: 6;
-  @include linearGradient($color-3, $color-4);
-}
-
-#question-6-bg {
-  /* age mother cites */
-  z-index: 7;
-  @include linearGradient($color-5, $color-6);
-}
-
-#question-7-bg {
-  /* name of street */
-  z-index: 8;
-  @include linearGradient($color-7, $color-8);
-}
-
-#question-8-bg {
-  /* name of town escaped */
-  z-index: 9;
-  @include linearGradient($color-8, $color-1);
-}
-
-#question-9-bg {
-  /* colour of cat's fur */
-  z-index: 10;
-  @include linearGradient($color-1, $color-2);
-}
-
-#question-10-bg {
-  /* casual sex ratio */
-  z-index: 11;
-  @include linearGradient($color-3, $color-4);
-}
-
-#question-11-bg {
-  /* one-word new year's summary */
-  z-index: 12;
-  @include linearGradient($color-5, $color-6);
-}
-
-#question-12-bg {
-  /* road trip passenger */
-  z-index: 13;
-  @include linearGradient($color-6, $color-7);
-}
-
-#question-13-bg {
-  /* co-parent */
-  z-index: 14;
-  @include linearGradient($color-7, $color-8);
-}
-
-#question-14-bg {
-  /* song when you realised */
-  z-index: 15;
-  @include linearGradient($color-8, $color-1);
-}
-
 .flex-center {
   align-self: center;
   margin: auto;
@@ -244,6 +139,7 @@ section {
   padding: 0;
   display: flex;
   max-width: 960px;
+  width: 90vw;
   border: 4px solid $white;
   background-color: transparentize($color-5, .8);
   border-radius: .5em;
@@ -271,9 +167,10 @@ section {
   }
 
   .account-info {
-    padding-top: 20px;
+    padding: .5em;
     color: $black;
-    width: 100%;
+    width: calc(100% - 1em);
+    margin: 0;
     display: block;
     text-align: center;
   }
@@ -327,12 +224,12 @@ section {
   visibility: hidden;
   display: none;
   margin-top: -5vh;
-}
 
-.try-again.visible {
-  visibility: visible;
-  display: block;
-  margin-top: -40px;
+  &.visible {
+    visibility: visible;
+    display: block;
+    margin-top: -40px;
+  }
 }
 
 .answer,
@@ -367,7 +264,7 @@ button i {
 
 button:hover,
 button:focus {
-  border: 2px solid #fff;
+  border: 2px solid rgba(255, 255, 255, 0);
   background-color: rgba(255, 255, 255, 0.2);
   outline: none;
 }
@@ -385,16 +282,16 @@ label {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
   line-height: 40px;
-}
 
-label.filled {
-  -webkit-transform: translateX(0em) translateY(-1.25em) scale(0.75);
-  transform: translateX(0em) translateY(-1.25em) scale(0.75);
-  transform-origin: 0 0;
-}
+  &.filled {
+    -webkit-transform: translateX(0em) translateY(-1.25em) scale(0.75);
+    transform: translateX(0em) translateY(-1.25em) scale(0.75);
+    transform-origin: 0 0;
+  }
 
-label.focused {
-  color: rgba(255, 255, 255, 0.65);
+  &.focused {
+    color: rgba(255, 255, 255, 0.65);
+  }
 }
 
 input {
@@ -410,36 +307,29 @@ input {
   font-family: inherit;
   color: inherit;
   min-width: 60%;
+
+  &[type="number"],
+  &[id*="ratio-"] {
+    min-width: 20%;
+  }
 }
 
-input[type="number"],
-input[id*="ratio-"] {
-  min-width: 20%;
-}
-
-.qty-plus {
+[class*='qty-'] {
   position: absolute;
-  left: calc(20% - 12px);
   cursor: pointer;
   display: none;
   visibility: hidden;
+
+  &[class*='plus'] {
+    left: calc(20% - 12px);
+  }
+
+  &[class*='minus'] {
+    bottom: 2px;
+    left: calc(20% - 12px);
+  }
 }
 
-.qty-minus {
-  position: absolute;
-  bottom: 2px;
-  left: calc(20% - 12px);
-  cursor: pointer;
-  display: none;
-  visibility: hidden;
-}
-
-/*
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  opacity: 0;
-}
-*/
 
 input:focus {
   border-color: rgba(255, 255, 255, 0.65);
@@ -449,163 +339,4 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-/*
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-*/
-
-/*
-input[type="number"]:focus {
-  outline: 0;
-}
-*/
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1280px) {
-  html {
-    font-size: 18px;
-  }
-}
-
-@media only screen and (max-width: 1280px) {
-  html {
-    font-size: 18px;
-  }
-
-  .question-box,
-  .try-again {
-    max-width: 840px;
-  }
-}
-
-/* Medium Devices, Desktops */
-
-@media only screen and (max-width: 992px) {
-  html {
-    font-size: 16px;
-  }
-
-  .question-box,
-  .try-again {
-    max-width: 720px;
-  }
-
-  .blob {
-    transform: scale(1);
-  }
-}
-
-/* Small Devices, Tablets */
-
-@media only screen and (max-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-
-  .question-box,
-  .try-again {
-    max-width: 600px;
-  }
-
-  header small {
-    display: block;
-  }
-
-  .intro-box {
-    padding: 0 30px;
-    max-width: 1200px;
-  }
-
-  .intro-text {
-    max-width: 100%;
-    float: none;
-    display: inline-block;
-  }
-
-  .account-box {
-    padding: 20px;
-    display: inline-block;
-    max-width: 100%;
-  }
-
-  .account-box img {
-    max-width: 20%;
-    float: left;
-    margin-right: 10px;
-  }
-}
-
-/* Extra Small Devices, Phones */
-
-@media only screen and (max-width: 620px) {
-  html {
-    font-size: 14px;
-  }
-
-  header {
-    padding: 0 10px;
-  }
-
-  .question-box,
-  .try-again {
-    max-width: 100%;
-    padding: 0 20px;
-    margin: 0 20px;
-  }
-
-  input {
-    width: 100%;
-  }
-
-  input [id*="ratio-"] {
-    width: 48%;
-  }
-
-  .answer p {
-    width: 2%;
-  }
-
-  button {
-    margin-top: 0;
-  }
-
-  button.next {
-    margin-top: 10px;
-  }
-
-  button.next,
-  button.tinderredirect {
-    width: 100%;
-  }
-
-  #question-14 .tinderredirect {
-    margin-top: 10px;
-  }
-
-  button[id*="submit-"] {
-    margin-top: 5vh;
-    width: 100%;
-  }
-
-  .question-box {
-    padding-top: 100px;
-    padding-bottom: 68px;
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  button.tinderredirect {
-    width: 100%;
-  }
-
-  button.next {
-    width: 100%;
-  }
-
-  .try-again button.next {
-    margin-top: 10px;
-  }
 }

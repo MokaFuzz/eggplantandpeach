@@ -1,0 +1,101 @@
+.blob {
+  position: absolute;
+  z-index: 20;
+  pointer-events: none;
+  fill: #ffffff;
+  opacity: .2;
+  transform: scale(2);
+  width: 100vw;
+  height: 100vh;
+  transition: all .25s ease-in-out;
+}
+
+
+#intro-bg {
+  z-index: 1;
+  @include linearGradient($color-4, $color-5);
+}
+
+#question-1-bg {
+  /* children's names */
+  z-index: 2;
+  @include linearGradient($color-5, $color-6);
+}
+
+#question-2-bg {
+  /* car make and model */
+  z-index: 3;
+  @include linearGradient($color-7, $color-8);
+}
+
+#question-3-bg {
+  /* sports team */
+  z-index: 4;
+  @include linearGradient($color-8, $color-1);
+}
+
+#question-4-bg {
+  /* middle name */
+  z-index: 5;
+  @include linearGradient($color-1, $color-2);
+}
+
+#question-5-bg {
+  /* top 10 list */
+  z-index: 6;
+  @include linearGradient($color-3, $color-4);
+}
+
+#question-6-bg {
+  /* age mother cites */
+  z-index: 7;
+  @include linearGradient($color-5, $color-6);
+}
+
+#question-7-bg {
+  /* name of street */
+  z-index: 8;
+  @include linearGradient($color-7, $color-8);
+}
+
+#question-8-bg {
+  /* name of town escaped */
+  z-index: 9;
+  @include linearGradient($color-8, $color-1);
+}
+
+#question-9-bg {
+  /* colour of cat's fur */
+  z-index: 10;
+  @include linearGradient($color-1, $color-2);
+}
+
+#question-10-bg {
+  /* casual sex ratio */
+  z-index: 11;
+  @include linearGradient($color-3, $color-4);
+}
+
+#question-11-bg {
+  /* one-word new year's summary */
+  z-index: 12;
+  @include linearGradient($color-5, $color-6);
+}
+
+#question-12-bg {
+  /* road trip passenger */
+  z-index: 13;
+  @include linearGradient($color-6, $color-7);
+}
+
+#question-13-bg {
+  /* co-parent */
+  z-index: 14;
+  @include linearGradient($color-7, $color-8);
+}
+
+#question-14-bg {
+  /* song when you realised */
+  z-index: 15;
+  @include linearGradient($color-8, $color-1);
+}
