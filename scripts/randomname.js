@@ -53,12 +53,12 @@
 
 (function() {
   var image = [
-    'images/users/1.png',
-    'images/users/2.png',
-    'images/users/3.png',
-    'images/users/4.png',
-    'images/users/5.png',
-    'images/users/6.png',
+    'images/users/1.jpg',
+    'images/users/2.jpg',
+    'images/users/3.jpg',
+    'images/users/4.jpg',
+    'images/users/5.jpg',
+    'images/users/6.jpg',
   ];
   var randomPic = image[Math.floor(Math.random() * image.length)];
   document.getElementById("profpic").innerHTML = '<img alt="profile picture" src="' +randomPic +'">';

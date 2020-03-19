@@ -1,0 +1,9 @@
+@mixin linearGradient($top, $bottom){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(120deg,  $top 20%, $bottom 60%); /* FF3.6+ */
+    background: -webkit-gradient(120deg, color-stop(20%,$top), color-stop(60%,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(120deg,  $top 20%,$bottom 60%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(120deg,  $top 20%,$bottom 60%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(120deg,  $top 20%,$bottom 60%); /* IE10+ */
+    background: linear-gradient(120deg,  $top 20%,$bottom 60%);
+}
