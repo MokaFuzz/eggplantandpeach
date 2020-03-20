@@ -42,8 +42,8 @@
     'Web Designer',
     'Advertising',
     'Copywriter',
-    'Art Institute, Seattle',
-    'Eastern Washington University',
+    'Bartender',
+    'Dancer',
     'Artist',
     'Online Personality',
   ];
