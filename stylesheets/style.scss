@@ -69,15 +69,14 @@ footer {
 }
 
 section {
-  display: flex;
-
   &[id^="question-"],
   &#intro[id^="intro"] {
     min-height: 100vh;
     width: 100vw;
     position: relative;
     vertical-align: top;
-    font-size: 1.5rem;
+    font-size: 1.5em;
+    display: flex;
   }
 
   &:not([id*="-bg"]) {
@@ -115,7 +114,8 @@ section {
   margin: auto;
 }
 
-.question-box {
+.question-box,
+.try-again {
   background-color: rgba(5, 5, 5, 0.4);
   padding: 20px;
 }
@@ -126,8 +126,8 @@ section {
 }
 
 .attempts p {
-  font-size: .75rem;
-  line-height: 1.5rem;
+  font-size: .75em;
+  line-height: 1.5em;
 }
 
 .question,
@@ -137,24 +137,12 @@ section {
 
 .try-again {
   z-index: 26;
-  right: 0;
-  left: 0;
-  margin-right: auto;
-  margin-left: auto;
   visibility: hidden;
   display: none;
-  margin-top: -5vh;
-
   &.visible {
     visibility: visible;
     display: block;
-    margin-top: -40px;
   }
-}
-
-.answer,
-.try-again button {
-  margin-top: 5vh;
 }
 
 

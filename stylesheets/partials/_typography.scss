@@ -55,11 +55,12 @@ header {
   }
 }
 
-.question-box {
+.question-box,
+.try-again {
   p {
     font-size: 1.2em;
     line-height: 1.5em;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
   }
 
   small {

@@ -27,7 +27,8 @@
 }
 
 .intro-box,
-.question-box {
+.question-box,
+.try-again {
   padding: 0;
   margin: 0 auto;
   z-index: 25;
@@ -39,7 +40,8 @@
 }
 
 .intro-text,
-.question-box {
+.question-box,
+.try-again {
   padding: 1.5em 1em;
 }
 
@@ -48,58 +50,72 @@
   background-color: transparentize($color-5, .8);
 }
 
-#question-1 .question-box {
+#question-1 .question-box,
+#question-1 .try-again {
   background-color: transparentize($color-6, .8);
 }
 
-#question-2 .question-box {
-  background-color: transparentize($color-8, .8);
-}
-
-#question-3 .question-box {
-  background-color: transparentize($color-1, .8);
-}
-
-#question-4 .question-box {
-  background-color: transparentize($color-2, .8);
-}
-
-#question-5 .question-box {
-  background-color: transparentize($color-4, .8);
-}
-
-#question-6 .question-box {
-  background-color: transparentize($color-6, .8);
-}
-
-#question-7 .question-box {
-  background-color: transparentize($color-8, .8);
-}
-
-#question-8 .question-box {
-  background-color: transparentize($color-1, .8);
-}
-
-#question-9 .question-box {
-  background-color: transparentize($color-2, .8);
-}
-
-#question-10 .question-box {
-  background-color: transparentize($color-4, .8);
-}
-
-#question-11 .question-box {
-  background-color: transparentize($color-6, .8);
-}
-
-#question-12 .question-box {
+#question-2 .question-box,
+#question-2 .try-again {
   background-color: transparentize($color-7, .8);
 }
 
-#question-13 .question-box {
+#question-3 .question-box,
+#question-3 .try-again {
   background-color: transparentize($color-8, .8);
 }
 
-#question-14 .question-box {
+#question-4 .question-box,
+#question-4 .try-again {
   background-color: transparentize($color-1, .8);
+}
+
+#question-5 .question-box,
+#question-5 .try-again {
+  background-color: transparentize($color-2, .8);
+}
+
+#question-6 .question-box,
+#question-6 .try-again {
+  background-color: transparentize($color-3, .8);
+}
+
+#question-7 .question-box,
+#question-7 .try-again {
+  background-color: transparentize($color-4, .8);
+}
+
+#question-8 .question-box,
+#question-8 .try-again {
+  background-color: transparentize($color-5, .8);
+}
+
+#question-9 .question-box,
+#question-9 .try-again {
+  background-color: transparentize($color-6, .8);
+}
+
+#question-10 .question-box,
+#question-10 .try-again {
+  background-color: transparentize($color-7, .8);
+}
+
+#question-11 .question-box,
+#question-11 .try-again {
+  background-color: transparentize($color-8, .8);
+}
+
+#question-12 .question-box,
+#question-12 .try-again {
+  background-color: transparentize($color-1, .8);
+}
+
+#question-13 .question-box,
+#question-13 .try-again {
+  background-color: transparentize($color-2, .8);
+}
+
+#question-14 .question-box,
+#question-14 .try-again {
+  background-color: transparentize($color-3, .8);
 }
