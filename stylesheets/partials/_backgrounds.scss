@@ -4,12 +4,15 @@
   pointer-events: none;
   fill: #ffffff;
   opacity: .2;
-  transform: scale(2);
   width: 100vw;
   height: 100vh;
   transition: all .25s ease-in-out;
-}
 
+  path {
+    transform: translate(150%, 100%) scale(2.8);
+    transform-origin: top;
+  }
+}
 
 #intro-bg {
   z-index: 1;

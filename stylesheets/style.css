@@ -2458,10 +2458,12 @@ header small {
   pointer-events: none;
   fill: #ffffff;
   opacity: .2;
-  transform: scale(2);
   width: 100vw;
   height: 100vh;
   transition: all .25s ease-in-out; }
+  .blob path {
+    transform: translate(150%, 100%) scale(2.8);
+    transform-origin: top; }
 
 #intro-bg {
   z-index: 1;
@@ -2881,15 +2883,15 @@ main {
 
 header {
   background-color: #fff;
-  min-height: 4em;
+  min-height: 6em;
   position: fixed;
-  padding: 0 1em;
+  padding: 0 1.5em;
   left: 0;
   right: 0;
   top: 0;
   z-index: 120; }
   header nav {
-    line-height: 4em;
+    line-height: 6em;
     display: block; }
     header nav .icon {
       height: 40px;
